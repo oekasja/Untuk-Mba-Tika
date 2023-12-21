@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ciyee Udah Selesai Magangnyaa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="tika">dear mba tika</a>
+        <ul>
+            <li><a href="#">Yang</a></li>
+            <li><a href="#">Kadang</a></li>
+            <li><a href="#" class="active">Lucu</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Congratulations</h2>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec">
+        <h2>Congratulations for Completing Your Intership!</h2>
+        <p>
+            <br>Halooo Mba Tikaa... Udah selesai ya magangnya? Sedih ga? Atau malah lega karena magangnya udah selesai?
+            Aku ga peduli juga sih sebenernya akowkoaowko. Engga-engga, kalo ga peduli ga bakal kubinin website sendiri
+            buat ngucapin selamat karena udah nyelesaiin magang, heheh. Gimana magangnya? Seru ga? Sesuai ekspektasi ga?
+            Udah tau si sebenernya, kurang seru ya hehe. Tapi, gimana rasanya kerja kayak gini for the first time?
+            Seru juga kan kalo dipikir-pikir lagi. Meskipun seringnya ngerasa bosen, tapi pasti ada aja kan momen
+            yang bikin pengen diinget terus. Lagian kalo bener-bener bosen, mesti kemarin ga bakal diperpanjang masa
+            magangnya.<br><br>Well, gimana pun rasanya, bosen kah, seru kah, intinya mba udah keren banget karena bisa
+            nyelesaiin magang di semester ini. Mana sambil skripsian juga, bisa sempro juga, sambil KKN juga,
+            mana masih ada matkul juga, ga sampe gila lagi wkwkwkwkwk. Tapi kerenan aku sih karena bisa menghadapi
+            makhluk seperti Anda. Wkwkwkwk aku jadi inget dulu confessnya pas hari pertama mba magang akwkakwkakw.
+            Maaf ya dulu gitu banget hehe, nanti aku ulangin lagi. Untung dulu ga kesel ya, gimana kalo kesel terus
+            aku diblock wkwkwkwk. Tapi ya bodo amat si, misal kemarin kesel, tinggal aku confess lagi. Emangnya
+            confess cuma boleh sekali.<br><br>Malah bahas confess wkwkwkwk, mesti bacanya sambil senyum-senyum sendiri
+            kan? Ga usah jaim, kalo senyum ya senyum aja. Emang aku lucu kok, ga usah gengsi. Mesti abis ini bilang "dih"
+            kwkwkwkwkwkw. Intinyaa, sekali lagi, selamat karena udah nyelesaiin magangnya. Semoga magangnya kemarin
+            bisa jadi pengalaman yang berharga untuk ke depannya, bisa jadi bekal untuk lebih wise lagi dalam berkarir,
+            dan bisa jadi batu loncatan ke karir yang mba pengenin.<br><br>Mba Tika keren banget.<br><br>
+        </p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
